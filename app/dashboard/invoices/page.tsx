@@ -9,7 +9,7 @@ import { fetchInvoicesPages } from '@/app/lib/data';
 import { Metadata } from 'next';
  
 export const metadata: Metadata = {
-  title: 'Invoices | My Acme Dashboard',
+  title: 'Invoices',
 };
 
 export default async function Page({ searchParams }: { searchParams?: { query?: string, page?: string }; }) {

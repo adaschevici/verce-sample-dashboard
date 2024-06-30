@@ -4,9 +4,12 @@ import { inter } from '@/app/ui/fonts';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
-  title: 'My ACME Dashboard',
-  description: 'Descroption of my app',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+  title: {
+    template: '%s | Acme Dashboard',
+    default: 'My Acme Dashboard',
+  },
+  description: 'The official Next.js Learn Dashboard built with App Router.',
+  metadataBase: new URL('https://artur.wtf'),
 };
 
 export default function RootLayout({
